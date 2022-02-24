@@ -7,9 +7,9 @@ import jetbrains.mps.generator.impl.query.QueryProviderBase;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.behavior.Classifier__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Objects;
@@ -28,6 +28,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.generator.impl.query.ReferenceTargetQuery;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
@@ -67,18 +68,30 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.size$S3Uo);
   }
   public static Object referenceMacro_GetReferent_2_0(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$YU), "GraphicsParam");
+  }
+  public static Object referenceMacro_GetReferent_2_1(final ReferenceMacroContext _context) {
     return Sequence.fromIterable(Classifier__BehaviorDescriptor.staticFields_id4_LVZ3pBr7M.invoke(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)", "~Color"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.color$xmRJ), LINKS.target$9xKj), PROPS.name$MnvL));
       }
     });
   }
+  public static Object referenceMacro_GetReferent_2_2(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$YU), "GraphicsParam");
+  }
   public static Object referenceMacro_GetReferent_3_0(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$YU), "GraphicsParam");
+  }
+  public static Object referenceMacro_GetReferent_3_1(final ReferenceMacroContext _context) {
     return Sequence.fromIterable(Classifier__BehaviorDescriptor.staticFields_id4_LVZ3pBr7M.invoke(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)", "~Color"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.color$xmRJ), LINKS.target$9xKj), PROPS.name$MnvL));
       }
     });
+  }
+  public static Object referenceMacro_GetReferent_3_2(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$YU), "GraphicsParam");
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.shapes$Sbsl);
@@ -165,8 +178,12 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   private final Map<String, ReferenceTargetQuery> rtqMethods = new HashMap<String, ReferenceTargetQuery>();
   {
-    rtqMethods.put("4110518749448733101", new RTQ(0, "red"));
-    rtqMethods.put("4110518749448788462", new RTQ(1, "red"));
+    rtqMethods.put("1827618685462546269", new RTQ(0, "g"));
+    rtqMethods.put("4110518749448733101", new RTQ(1, "red"));
+    rtqMethods.put("1827618685462551174", new RTQ(2, "g"));
+    rtqMethods.put("4110518749448948824", new RTQ(3, "g"));
+    rtqMethods.put("4110518749448788462", new RTQ(4, "red"));
+    rtqMethods.put("4110518749448962475", new RTQ(5, "g"));
   }
   @NotNull
   @Override
@@ -186,7 +203,15 @@ public class QueriesGenerated extends QueryProviderBase {
         case 0:
           return QueriesGenerated.referenceMacro_GetReferent_2_0(ctx);
         case 1:
+          return QueriesGenerated.referenceMacro_GetReferent_2_1(ctx);
+        case 2:
+          return QueriesGenerated.referenceMacro_GetReferent_2_2(ctx);
+        case 3:
           return QueriesGenerated.referenceMacro_GetReferent_3_0(ctx);
+        case 4:
+          return QueriesGenerated.referenceMacro_GetReferent_3_1(ctx);
+        case 5:
+          return QueriesGenerated.referenceMacro_GetReferent_3_2(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -201,6 +226,10 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SProperty upperLeftX$S2Jj = MetaAdapterFactory.getProperty(0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f691987L, 0x390b7f062f691988L, "upperLeftX");
     /*package*/ static final SProperty upperLeftY$S3dl = MetaAdapterFactory.getProperty(0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f691987L, 0x390b7f062f69198aL, "upperLeftY");
     /*package*/ static final SProperty size$S3Uo = MetaAdapterFactory.getProperty(0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f691987L, 0x390b7f062f69198dL, "size");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Canvas$YU = MetaAdapterFactory.getConcept(0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f691994L, "Shapes.structure.Canvas");
   }
 
   private static final class LINKS {

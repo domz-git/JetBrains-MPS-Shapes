@@ -5,17 +5,21 @@ package Shapes.sandbox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Graphics;
+import java.awt.Color;
 import java.awt.Dimension;
 
 public class MyDrawing extends JFrame {
 
   private JPanel panel = new JPanel() {
     @Override
-    protected void paintComponent(Graphics g) {
-      super.paintComponent(g);
-      System.out.println("Draw here");
-      System.out.println("Draw here");
-      System.out.println("Draw here");
+    protected void paintComponent(Graphics graphics) {
+      super.paintComponent(graphics);
+      graphics.setColor(Color.blue);
+      graphics.drawOval(10, 20, 30, 30);
+      graphics.setColor(Color.red);
+      graphics.drawRect(100, 200, 50, 50);
+      graphics.setColor(Color.green);
+      graphics.drawRect(200, 300, 60, 60);
     }
   };
 

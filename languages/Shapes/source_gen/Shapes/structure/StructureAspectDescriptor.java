@@ -66,6 +66,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Shapes", "Canvas", 0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f691994L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:adf25e1e-b5ca-490c-963d-5bf759864a6a(Shapes.structure)/4110518749447657876");
     b.version(3);
     b.aggregate("shapes", 0x390b7f062f691997L).target(0x39c60725afc5407dL, 0xa8fe4ec957826f01L, 0x390b7f062f67e501L).optional(true).ordered(true).multiple(true).origin("4110518749447657879").done();

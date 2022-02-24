@@ -300,15 +300,15 @@
                   <node concept="3nyPlj" id="3$bvKoJsjlp" role="3clFbG">
                     <ref role="37wK5l" to="dxuu:~JComponent.paintComponent(java.awt.Graphics)" resolve="paintComponent" />
                     <node concept="37vLTw" id="3$bvKoJsjlo" role="37wK5m">
-                      <ref role="3cqZAo" node="3$bvKoJsjlh" resolve="g" />
+                      <ref role="3cqZAo" node="3$bvKoJsjlh" resolve="graphics" />
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="3$bvKoJsnSF" role="3cqZAp">
                   <node concept="2OqwBi" id="3$bvKoJsnSC" role="3clFbG">
                     <node concept="10M0yZ" id="3$bvKoJsnSD" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" />
-                      <ref role="3cqZAo" to="wyt6:~System.out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="3$bvKoJsnSE" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -335,7 +335,7 @@
                 </node>
               </node>
               <node concept="2AHcQZ" id="3$bvKoJsjln" role="2AJF6D">
-                <ref role="2AI5Lk" to="wyt6:~Override" />
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
               </node>
             </node>
           </node>
@@ -522,7 +522,32 @@
             <node concept="3clFbF" id="3$bvKoJu6rQ" role="3cqZAp">
               <node concept="2OqwBi" id="3$bvKoJu6xY" role="3clFbG">
                 <node concept="37vLTw" id="3$bvKoJu6rO" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3$bvKoJu6ke" resolve="graphics" />
+                  <ref role="3cqZAo" node="3$bvKoJu6ke" resolve="g" />
+                  <node concept="1ZhdrF" id="1_t0obzR8tt" role="lGtFl">
+                    <property role="2qtEX8" value="variableDeclaration" />
+                    <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                    <node concept="3$xsQk" id="1_t0obzR8tu" role="3$ytzL">
+                      <node concept="3clFbS" id="1_t0obzR8tv" role="2VODD2">
+                        <node concept="3clFbF" id="1_t0obzR9zs" role="3cqZAp">
+                          <node concept="2OqwBi" id="1_t0obzR9zt" role="3clFbG">
+                            <node concept="1iwH7S" id="1_t0obzR9zu" role="2Oq$k0" />
+                            <node concept="1iwH70" id="1_t0obzR9zv" role="2OqNvi">
+                              <ref role="1iwH77" node="3$bvKoJuUJs" resolve="GraphicsParam" />
+                              <node concept="1PxgMI" id="1_t0obzR9zw" role="1iwH7V">
+                                <node concept="chp4Y" id="1_t0obzR9zx" role="3oSUPX">
+                                  <ref role="cht4Q" to="kozz:3$bvKoJqhAk" resolve="Canvas" />
+                                </node>
+                                <node concept="2OqwBi" id="1_t0obzR9zy" role="1m5AlR">
+                                  <node concept="30H73N" id="1_t0obzR9zz" role="2Oq$k0" />
+                                  <node concept="1mfA1w" id="1_t0obzR9z$" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="liA8E" id="3$bvKoJu6Js" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
@@ -594,7 +619,32 @@
             <node concept="3clFbF" id="3$bvKoJu6Qm" role="3cqZAp">
               <node concept="2OqwBi" id="3$bvKoJu6WY" role="3clFbG">
                 <node concept="37vLTw" id="3$bvKoJu6Qk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3$bvKoJu6ke" resolve="graphics" />
+                  <ref role="3cqZAo" node="3$bvKoJu6ke" resolve="g" />
+                  <node concept="1ZhdrF" id="1_t0obzR9E6" role="lGtFl">
+                    <property role="2qtEX8" value="variableDeclaration" />
+                    <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                    <node concept="3$xsQk" id="1_t0obzR9E7" role="3$ytzL">
+                      <node concept="3clFbS" id="1_t0obzR9E8" role="2VODD2">
+                        <node concept="3clFbF" id="1_t0obzR9SM" role="3cqZAp">
+                          <node concept="2OqwBi" id="1_t0obzR9SN" role="3clFbG">
+                            <node concept="1iwH7S" id="1_t0obzR9SO" role="2Oq$k0" />
+                            <node concept="1iwH70" id="1_t0obzR9SP" role="2OqNvi">
+                              <ref role="1iwH77" node="3$bvKoJuUJs" resolve="GraphicsParam" />
+                              <node concept="1PxgMI" id="1_t0obzR9SQ" role="1iwH7V">
+                                <node concept="chp4Y" id="1_t0obzR9SR" role="3oSUPX">
+                                  <ref role="cht4Q" to="kozz:3$bvKoJqhAk" resolve="Canvas" />
+                                </node>
+                                <node concept="2OqwBi" id="1_t0obzR9SS" role="1m5AlR">
+                                  <node concept="30H73N" id="1_t0obzR9ST" role="2Oq$k0" />
+                                  <node concept="1mfA1w" id="1_t0obzR9SU" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="liA8E" id="3$bvKoJu711" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.drawOval(int,int,int,int)" resolve="drawOval" />
@@ -702,7 +752,7 @@
             <node concept="3clFbF" id="3$bvKoJu$uN" role="3cqZAp">
               <node concept="2OqwBi" id="3$bvKoJu$$Y" role="3clFbG">
                 <node concept="37vLTw" id="3$bvKoJu$uL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3$bvKoJu$o5" resolve="graphics" />
+                  <ref role="3cqZAo" node="3$bvKoJu$o5" resolve="g" />
                   <node concept="1ZhdrF" id="3$bvKoJvcLo" role="lGtFl">
                     <property role="2qtEX8" value="variableDeclaration" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
@@ -799,7 +849,7 @@
             <node concept="3clFbF" id="3$bvKoJu$RT" role="3cqZAp">
               <node concept="2OqwBi" id="3$bvKoJu$Yr" role="3clFbG">
                 <node concept="37vLTw" id="3$bvKoJu$RR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3$bvKoJu$o5" resolve="graphics" />
+                  <ref role="3cqZAo" node="3$bvKoJu$o5" resolve="g" />
                   <node concept="1ZhdrF" id="3$bvKoJvg6F" role="lGtFl">
                     <property role="2qtEX8" value="variableDeclaration" />
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />

@@ -8,13 +8,14 @@
   <uses module="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="dp" />
   <uses module="39c60725-afc5-407d-a8fe-4ec957826f01(Shapes)" kind="dp" />
   <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+  <uses module="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" kind="dp" />
   <uses module="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="dp" />
   <dependency className="Shapes.sandbox.MyDrawing">
+    <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.JPanel" />
     <classNode extendsClassName="javax.swing.JFrame" />
   </dependency>
